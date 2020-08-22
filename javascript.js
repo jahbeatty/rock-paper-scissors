@@ -17,11 +17,13 @@ const their_score = document.createElement('div');
 const result = document.createElement('div');
 const match = document.createElement('div');
 const play_again = document.createElement('button');
+const h1 = document.createElement('h1');
 
 match.textContent = `Select a weapon to begin`;
 your_score.textContent = `Your Score: 0`;
 their_score.textContent = `Computer Score: 0`;
 play_again.textContent = `Play Again`;
+h1.textContent = `Rock Paper Scissors | First to 5`;
 play_again.setAttribute("id", "playAgain")
 
 match.style.cssText = "font-size:20px; text-align:center";
@@ -43,6 +45,7 @@ background-color: rgb(177, 177, 161);
 text-shadow: 0 0 .5rem black;
 margin-items: center`;
 
+container.insertBefore(h1,selections);
 container.appendChild(match)
 container.appendChild(your_score);
 container.appendChild(their_score);
